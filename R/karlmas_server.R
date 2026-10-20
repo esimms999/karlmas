@@ -6,11 +6,11 @@
 #' @importFrom htmltools HTML includeMarkdown includeHTML
 #' @importFrom shinyjs hide show
 
-ericmas_server <- function(input, output) {
+karlmas_server <- function(input, output) {
 
   # Filter by selected year
   selected_year <- reactive({
-    ericmas_data |>
+    karlmas_data |>
       dplyr::filter(year %in% input$selected_year)
   })
 
@@ -20,24 +20,24 @@ ericmas_server <- function(input, output) {
   })
 
   # value_box for start date
-  ericmas_start <- reactive({
+  karlmas_start <- reactive({
     as.character(selected_year()$start_date)
   })
 
   # value_box for end date
-  ericmas_end <- reactive({
+  karlmas_end <- reactive({
     as.character(selected_year()$end_date)
   })
 
   # value_box for number of gifts
-  ericmas_gifts <- reactive({
+  karlmas_gifts <- reactive({
     as.character(selected_year()$number_of_days)
   })
 
   output$year_selected <- renderText(year_selected())
-  output$ericmas_start <- renderText(ericmas_start())
-  output$ericmas_end <- renderText(ericmas_end())
-  output$ericmas_gifts <- renderText(ericmas_gifts())
+  output$karlmas_start <- renderText(karlmas_start())
+  output$karlmas_end <- renderText(karlmas_end())
+  output$karlmas_gifts <- renderText(karlmas_gifts())
 
   # output$about_text <- renderUI({
     #htmltools::includeHTML(path = 'inst/www/about.html')

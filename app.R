@@ -8,7 +8,7 @@ withr::with_options(new = list(shiny.autoload.r = FALSE), code = {
     tryCatch(
       expr = {
         # load package
-        library(ericmas)
+        library(karlmas)
       },
       error = function(e) {
         # load R/ folder
@@ -21,5 +21,5 @@ withr::with_options(new = list(shiny.autoload.r = FALSE), code = {
   }
 
   # create shiny object
-  ericmas::ericmasApp()
+  karlmas::karlmasApp()
 })

@@ -1,12 +1,12 @@
-name: ericmas
-title: ericmas
+name: karlmasdev
+title: karlmasdev
 username: esimms
 account: esimms
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 10840195
-bundleId: 8243721
-url: https://esimms.shinyapps.io/ericmas/
+appId: 10841948
+bundleId: 8146092
+url: https://esimms.shinyapps.io/karlmasdev/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE

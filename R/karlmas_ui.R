@@ -5,17 +5,17 @@
 #' @import shiny
 #' @importFrom htmltools includeHTML includeMarkdown tags
 
-ericmas_ui <- function() {
+karlmas_ui <- function() {
 
   # addResourcePath(
   #   prefix = 'www',
-  #   directoryPath = system.file('www', package = 'ericmas'))
+  #   directoryPath = system.file('www', package = 'karlmas'))
 
-  fs::dir_tree(fs::path_package(package = "ericmas"))
+  fs::dir_tree(fs::path_package(package = "karlmas"))
   cat(getwd())
 
   page_sidebar(
-    title = "Ericmas Calculator v0.8",
+    title = "Karlmas Calculator v0.1",
     bg = "lightblue",
     open = "closed",
     fillable = FALSE,
@@ -43,17 +43,17 @@ ericmas_ui <- function() {
                   ),
                   value_box(
                     title = "Starts at sundown",
-                    value = textOutput("ericmas_start"),
+                    value = textOutput("karlmas_start"),
                     showcase = bsicons::bs_icon("sunset")
                   ),
                   value_box(
                     title = "Ends at sunrise",
-                    value = textOutput("ericmas_end"),
+                    value = textOutput("karlmas_end"),
                     showcase = bsicons::bs_icon("sunrise")
                   ),
                   value_box(
-                    title = "Gifts required",
-                    value = textOutput("ericmas_gifts"),
+                    title = "Gifts suggested",
+                    value = textOutput("karlmas_gifts"),
                     showcase = bsicons::bs_icon("gift")
                     ),
                   )

@@ -1,17 +1,12 @@
-# Ericmas
+# Karlmas
 
 <div class = "row">
 
 <div class = "col-md-6">
-  ![](happy_socks.jpg)
-</div>
-<div class = "col-md-6">
 <br>
-          Ericmas is a celebration of the birth of Eric. It is a major festival every year and is eagerly awaited by many. As is shown in the recent photo, the joy of Eric receiving gifts is a beautiful thing. Everyone wants to take part!
+          Karlmas is a celebration of the birth of Karl. It is a minor observance every year and is awaited by a handful of friends and family.
 <br><br>
-          The tradition is to give a nice gift for each day of Ericmas, and to give a **SUPER NICE** gift for Ericmas Day. This app is provided in order to help people avoid beclowning and shaming themselves by under-gifting.
-<br><br>
-          Something to keep in mind: a single gift is appropriate for mid-Ericmas in early July.          
+          The tradition is to give a gift on the day of Karlmas. If you want to go overboard, add small gifts for the day before and after.
 </div>
 </div>
-Version 0.2
+Version 0.1

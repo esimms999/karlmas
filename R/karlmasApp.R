@@ -6,8 +6,9 @@
 #'
 #' @import shiny
 #'
-#' @export ericmasApp
+#' @export karlmasApp
 #'
-ericmasApp <- function() {
-  shiny::shinyApp(ui = ericmas_ui, server = ericmas_server)
+karlmasApp <- function() {
+  shiny::shinyApp(ui = karlmas_ui, server = karlmas_server)
 }
+
