@@ -19,13 +19,27 @@ karlmas_ui <- function() {
     title = "Karlmas Calculator",
     fillable_mobile = TRUE,
 
-    shinyWidgets::radioGroupButtons(
-      inputId = "selected_year",
-      label = "Select Year:",
-      choices = available_years,
-      selected = "2024",
-      justified = TRUE
+    tags$div(
+      id = "year-selector",
+      shinyWidgets::radioGroupButtons(
+        inputId = "selected_year",
+        label = "Select Year:",
+        choices = c("2026", "2027", "2028", "2029", "2030", "2031"),
+        selected = "2026",
+        justified = TRUE
+      )
     ),
+    tags$style(HTML("
+      #year-selector .btn-group-justified {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+      }
+      #year-selector .btn-group-justified > .btn-group-toggle {
+        width: 100%;
+        margin: 0;
+      }
+    ")),
 
     navset_card_pill(
       title = "",
