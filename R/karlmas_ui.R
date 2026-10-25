@@ -15,7 +15,7 @@ karlmas_ui <- function() {
   cat(getwd())
 
   page_sidebar(
-    title = "Karlmas Calculator v0.1",
+    title = "Karlmas Calculator",
     bg = "lightblue",
     open = "closed",
     fillable = FALSE,
