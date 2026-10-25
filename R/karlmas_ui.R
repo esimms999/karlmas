@@ -26,7 +26,8 @@ karlmas_ui <- function() {
         label = "Select Year:",
         choices = c("2026", "2027", "2028", "2029", "2030", "2031"),
         selected = "2026",
-        justified = TRUE
+        justified = TRUE,
+        size = "sm"
       )
     ),
     tags$style(HTML("
@@ -34,10 +35,15 @@ karlmas_ui <- function() {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
         gap: 4px;
+        max-width: 280px;
       }
       #year-selector .btn-group-justified > .btn-group-toggle {
         width: 100%;
         margin: 0;
+      }
+      #year-selector .btn-group-justified .btn {
+        padding: 2px 6px;
+        font-size: 0.8rem;
       }
     ")),
 
