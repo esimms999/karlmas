@@ -20,18 +20,33 @@ karlmas_ui <- function() {
     fillable_mobile = TRUE,
 
     tags$div(
-      id = "year-selector",
-      shinyWidgets::radioGroupButtons(
-        inputId = "selected_year",
-        label = NULL,
-        choices = c("2026", "2027", "2028", "2029", "2030", "2031",
-                    "2032", "2033", "2034"),
-        selected = "2026",
-        justified = TRUE,
-        size = "sm"
+      id = "header-row",
+      tags$h1("Karlmas Calculator", id = "app-title"),
+      tags$div(
+        id = "year-selector",
+        shinyWidgets::radioGroupButtons(
+          inputId = "selected_year",
+          label = NULL,
+          choices = c("2026", "2027", "2028", "2029", "2030", "2031",
+                      "2032", "2033", "2034"),
+          selected = "2026",
+          justified = TRUE,
+          size = "sm"
+        )
       )
     ),
     tags$style(HTML("
+      #header-row {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        flex-wrap: wrap;
+      }
+      #app-title {
+        margin: 0;
+        font-size: 1.5rem;
+        white-space: nowrap;
+      }
       #year-selector .btn-group-justified {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
