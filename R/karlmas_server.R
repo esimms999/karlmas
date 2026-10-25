@@ -31,7 +31,7 @@ karlmas_server <- function(input, output) {
 
   # value_box for number of gifts
   karlmas_gifts <- reactive({
-    as.character(selected_year()$number_of_days)
+    "1"
   })
 
   output$year_selected <- renderText(year_selected())
