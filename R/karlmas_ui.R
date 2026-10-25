@@ -23,8 +23,9 @@ karlmas_ui <- function() {
       id = "year-selector",
       shinyWidgets::radioGroupButtons(
         inputId = "selected_year",
-        label = "Select Year:",
-        choices = c("2026", "2027", "2028", "2029", "2030", "2031"),
+        label = NULL,
+        choices = c("2026", "2027", "2028", "2029", "2030", "2031",
+                    "2032", "2033", "2034"),
         selected = "2026",
         justified = TRUE,
         size = "sm"
