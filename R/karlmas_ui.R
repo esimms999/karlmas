@@ -14,20 +14,17 @@ karlmas_ui <- function() {
   fs::dir_tree(fs::path_package(package = "karlmas"))
   cat(getwd())
 
-  page_sidebar(
+  page_fillable(
     title = "Karlmas Calculator",
-    bg = "lightblue",
-    open = "closed",
-    fillable = FALSE,
-    fluid = FALSE,
-    collapsible = FALSE,
+    fillable_mobile = TRUE,
 
-    sidebar = selectInput(
+    selectInput(
       inputId = "selected_year",
       label = "Select Year:",
       choices = available_years,
       selected = "2024",
-      multiple = FALSE
+      multiple = FALSE,
+      width = "100%"
     ),
 
     navset_card_pill(
@@ -35,6 +32,7 @@ karlmas_ui <- function() {
       nav_panel("Calculator",
                 layout_columns(
                   fill = FALSE,
+                  col_widths = breakpoints(xs = 12, sm = 6, md = 3),
                   value_box(
                     title = "Year",
                     value = textOutput("year_selected"),
