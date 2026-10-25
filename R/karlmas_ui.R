@@ -4,6 +4,7 @@
 #' @importFrom fs dir_tree
 #' @import shiny
 #' @importFrom htmltools includeHTML includeMarkdown tags
+#' @importFrom shinyWidgets radioGroupButtons
 
 karlmas_ui <- function() {
 
@@ -18,13 +19,12 @@ karlmas_ui <- function() {
     title = "Karlmas Calculator",
     fillable_mobile = TRUE,
 
-    selectInput(
+    shinyWidgets::radioGroupButtons(
       inputId = "selected_year",
       label = "Select Year:",
       choices = available_years,
       selected = "2024",
-      multiple = FALSE,
-      width = "100%"
+      justified = TRUE
     ),
 
     navset_card_pill(

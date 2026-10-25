@@ -16,6 +16,7 @@ Imports:
     markdown,
     shiny,
     shinyjs,
+    shinyWidgets,
     stringr,
     tibble
 Suggests: 
