@@ -61,6 +61,13 @@ karlmas_ui <- function() {
         padding: 2px 6px;
         font-size: 0.8rem;
       }
+      .value-box-title {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+      }
+      .value-box-value {
+        font-size: 1.1rem;
+      }
     ")),
 
     navset_card_pill(
@@ -73,22 +80,26 @@ karlmas_ui <- function() {
                     title = "Year",
                     value = textOutput("year_selected"),
                     color = "blue",                       # Does not seem to work :(
-                    showcase = bsicons::bs_icon("calendar")
+                    showcase = bsicons::bs_icon("calendar"),
+                    height = "90px"
                   ),
                   value_box(
                     title = "Starts at sundown",
                     value = textOutput("karlmas_start"),
-                    showcase = bsicons::bs_icon("sunset")
+                    showcase = bsicons::bs_icon("sunset"),
+                    height = "90px"
                   ),
                   value_box(
                     title = "Ends at sunrise",
                     value = textOutput("karlmas_end"),
-                    showcase = bsicons::bs_icon("sunrise")
+                    showcase = bsicons::bs_icon("sunrise"),
+                    height = "90px"
                   ),
                   value_box(
                     title = "Gifts suggested",
                     value = textOutput("karlmas_gifts"),
-                    showcase = bsicons::bs_icon("gift")
+                    showcase = bsicons::bs_icon("gift"),
+                    height = "90px"
                     ),
                   )
                 ),
