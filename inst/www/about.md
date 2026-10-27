@@ -9,4 +9,4 @@
           The tradition is to give a gift on the day of Karlmas. If you want to go overboard, add small gifts for the day before and after.
 </div>
 </div>
-Version 0.1
+Version 0.2
